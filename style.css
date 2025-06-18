@@ -72,8 +72,9 @@ body {
 
 .navbar a.active,
 .navbar a:hover {
-  background-color: #d9d3d3;
+  background-color: white;
   border-radius: 5px;
+  color: #0c4da2;
 }
 
 .section {
@@ -651,6 +652,11 @@ row-gap: 5rem;
   font-family: 'Lora', serif;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+}
+
+.card-text p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
 }
 
 .pub-date {
