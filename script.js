@@ -141,3 +141,16 @@ revealElements.forEach(el => observer.observe(el));
 
       filterAndPaginate();
     });
+
+
+
+
+    // hamburger menu toggle
+    document.addEventListener('DOMContentLoaded', () => {
+  const navToggle = document.getElementById('navToggle');
+  const navbar = document.querySelector('.navbar');
+
+  navToggle.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+  });
+});

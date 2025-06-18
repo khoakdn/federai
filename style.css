@@ -1099,3 +1099,348 @@ row-gap: 5rem;
   color: #063373;
   text-decoration: underline;
 }
+
+
+/* Responsive Improvements */
+
+/* Navbar toggle and layout */
+@media (max-width: 768px) {
+  .nav-center .nav-links {
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    display: none;
+  }
+
+  .navbar.show .nav-links {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-left,
+  .nav-center {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* PDF Button for smaller devices */
+@media (max-width: 480px) {
+  .pdf-button {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive typography using clamp */
+.case-cover-content h1,
+.cover-content h1,
+.about-title,
+.project-title,
+.team-title {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+/* Image responsiveness fallback */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive adjustments for footer and filter bar */
+@media (max-width: 768px) {
+  .case-filter-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Cover height adjustments for mobile */
+@media (max-width: 600px) {
+  .case-cover,
+  .case-cover1,
+  .case-cover2,
+  .case-cover3,
+  .case-cover4 {
+    height: 40vh;
+  }
+}
+
+/* Adjust case grid for very small screens */
+@media (max-width: 480px) {
+  .case-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+
+
+/* --- Enhanced Responsive CSS for Mobile Devices --- */
+
+/* Force case grid and student post cards to stack vertically */
+@media (max-width: 600px) {
+  .case-grid,
+  .student-posts-grid {
+    grid-template-columns: 1fr !important;
+    padding: 0 1rem;
+  }
+
+  .case-card,
+  .student-post-card {
+    flex-direction: column !important;
+  }
+
+  .card-image,
+  .card-text {
+    text-align: center !important;
+    padding: 1rem !important;
+  }
+
+  .card-image img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* Adjust navbar links and layout for mobile */
+@media (max-width: 768px) {
+  .nav-center .nav-links {
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 1001;
+  }
+
+  .navbar.show .nav-links {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .nav-left, .nav-center {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+
+/* Ensure footer stacks on mobile */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+/* Shrink cover height and content for phones */
+@media (max-width: 600px) {
+  .case-cover,
+  .case-cover1,
+  .case-cover2,
+  .case-cover3,
+  .case-cover4 {
+    height: 40vh !important;
+  }
+
+  .case-cover-content h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .case-cover-content p {
+    font-size: 1rem !important;
+  }
+}
+
+/* Reduce padding for video overlay on phones */
+@media (max-width: 600px) {
+  .video-overlay {
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .intro-line {
+    margin-left: 0;
+    row-gap: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .video-buttons {
+    justify-content: center;
+  }
+}
+
+
+
+/* === Main Page Mobile Fixes === */
+
+@media (max-width: 600px) {
+  /* Video Section */
+  .video-section {
+    height: auto;
+  }
+
+  .bg-video {
+    height: auto;
+    object-fit: cover;
+  }
+
+  .intro-line {
+    margin-left: 0;
+    row-gap: 1.5rem;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .video-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Logo Marquee Section */
+  .funding-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .logo-marquee {
+    width: 100%;
+  }
+
+  .logo-track {
+    gap: 1rem;
+  }
+
+  .logo-track img {
+    height: 30px;
+  }
+
+  /* Reason Grid (About Section) */
+  .reason-grid,
+  .enhanced-reason-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .reason-box,
+  .enhanced-reason-box {
+    padding: 1rem;
+  }
+
+  /* Team Grid Section */
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+
+  .team-card {
+    padding: 1rem;
+  }
+
+  .team-photo {
+    width: 100px;
+    height: 120px;
+  }
+
+  .team-name {
+    font-size: 0.9rem;
+  }
+
+  .team-role {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+/* === Hamburger Menu Support === */
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  z-index: 2002;
+}
+
+.nav-toggle span {
+  height: 3px;
+  width: 25px;
+  background: #0c4da2;
+  margin: 4px 0;
+  transition: 0.4s;
+  border-radius: 2px;
+}
+
+@media (max-width: 1024px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-center .nav-links {
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    display: none;
+    width: 100%;
+    z-index: 1001;
+    padding: 1rem 0;
+  }
+
+  .navbar.show .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
