@@ -943,6 +943,30 @@ row-gap: 5rem;
       text-align: center;
       color: white;
     }
+
+      .case-cover1 {
+      background: url('./media/casestudy/gr1-cover.jpg') center/cover no-repeat;
+      height: 60vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+          .case-cover2 {
+      background: url('./media/casestudy/gr2-cover.jpg') center/cover no-repeat;
+      height: 60vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+
     .case-cover::before {
       content: '';
       position: absolute;
@@ -956,7 +980,7 @@ row-gap: 5rem;
       padding: 2rem;
     }
     .case-cover-content h1 {
-      font-size: 3rem;
+      font-size: 2rem;
       font-family: 'Lora', serif;
       margin-bottom: 1rem;
     }
@@ -998,6 +1022,7 @@ row-gap: 5rem;
       text-align: center;
       transition: background-color 0.3s ease;
       font-family: 'Poppins', sans-serif;
+      max-width: fit-content;
     }
     .pdf-button:hover {
       background-color: #063373;

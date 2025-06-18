@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study - AI for Healthcare</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <img src="./media/artlogo.png" alt="Logo" class="logo">
+      </div>
+      <div class="nav-center">
+        <ul class="nav-links">
+          <li><a href="index.html#intro-video" class="nav-link">Home</a></li>
+          <li><a href="index.html#team" class="nav-link">Our Team</a></li>
+          <li><a href="index.html#about" class="nav-link">Features</a></li>
+          <li><a href="index.html#projects" class="nav-link">What is Federated Learning?</a></li>
+          <li><a href="index.html#posts" class="nav-link">News</a></li>
+          <li><a href="casestudy.html" class="nav-link active">Case study</a></li>
+          <li><a href="index.html#testimonials" class="nav-link">Testimonials</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-cover2">
+      <div class="case-cover-content">
+        <h1>Federated Learning: A Secure and Scalable Approach to AI Training</h1>
+        <p>Empowering collaborative AI development without compromising user privacy.</p>
+      </div>
+    </section>
+
+    <p class="case-meta">
+<div class="go-back-wrapper">
+  <a href="./casestudy.html" class="go-back">← Go back to Case Studies</a>
+</div>
+<p class="case-date">Published: March 10, 2025</p>
+
+
+    <section class="case-content">
+      <p>Federated Learning is an advanced method for training artificial intelligence (AI) models across multiple devices or organizations—without transferring raw data. Instead of centralizing data in one location, the learning process happens locally on each device. This allows models to learn from diverse, distributed datasets while keeping personal and sensitive information secure.</p>
+      <img src="./media/casestudy/gr2.png" alt="Healthcare AI Diagram">
+      <p>Model Distribution
+The central server prepares the latest version of the global model and stores it in Azure Blob Storage. Each participating device—referred to as an “edge device”—downloads this version to begin its local training process.
+
+<br>Local Training
+Using its own private dataset, the edge device trains the model locally. This ensures data never leaves the device, significantly enhancing privacy and security while leveraging the device’s computing power.
+
+<br>Update Upload
+After local training, the device does not send back any raw data. Instead, it uploads only the learned model updates—such as gradients or weight changes—back to Azure Blob Storage.
+
+<br>Aggregation Orchestration
+A Temporal workflow monitors the storage, collects updates from all participating devices, and securely aggregates them into a new global model. This step ensures all contributions are combined without exposing any individual’s data.
+
+<br>Model Update & Loop
+The aggregated model is saved and redistributed to all edge devices, beginning a new round of training. This continuous loop refines the model with each cycle, improving performance across all devices without violating user privacy.
+
+<br>What Makes Federated Learning Valuable?
+Federated learning offers distinct advantages that make it ideal for enterprise and privacy-sensitive environments:
+
+<br>🔒 Privacy-Preserving – Data stays on the device, ensuring sensitive information is never exposed.
+
+<br>⚖️ Legal Compliant – Supports compliance with GDPR, HIPAA, and other data protection regulations.
+
+<br>📈 Scalable – Efficiently supports thousands of users or devices with minimal central infrastructure.
+
+<br>👤 Personalised – Models can adapt to user-specific data without sharing it, enabling more relevant and accurate outcomes.
+
+This approach opens up new possibilities for AI in sectors like healthcare, finance, and government, where data sensitivity and regulatory compliance are critical. With federated learning, organizations can collaborate on intelligent solutions—without compromising privacy or trust.</p>
+    </section>
+
+    <a href="./document/gr2-doc.pdf" class="pdf-button" target="_blank">View Full Case Study (PDF)</a>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Art-IE</h3>
+      </div>
+      <div class="footer-column">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Privacy</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="#">Email</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Social</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter/X</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
