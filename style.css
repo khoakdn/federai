@@ -701,7 +701,7 @@ row-gap: 5rem;
   background-color: #ffffff;
   color: #333;
   padding: 4rem 2rem;
-  max-width: 1400px;
+  max-width: 1480px;
   margin: 0 auto;
   text-align: center;
   display: block;
@@ -722,7 +722,7 @@ row-gap: 5rem;
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr); /* Force 7 columns */
+  grid-template-columns: repeat(8, 1fr); /* Force 7 columns */
   gap: 1.2rem;
 }
 
@@ -741,7 +741,7 @@ row-gap: 5rem;
 
 .team-photo {
   width: 130px;
-  height: 150px;
+  height: 130px;
   border-radius: 10%;
   object-fit: cover;
   margin-bottom: 0.75rem;
@@ -1443,4 +1443,29 @@ img {
     text-align: center;
     margin: 0.5rem 0;
   }
+}
+
+.navbar.scrolled .nav-toggle span {
+  background: white;
+}
+
+.navbar.scrolled .nav-left,
+.navbar.scrolled .nav-left * {
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .navbar.scrolled {
+    background-color: #0c4da2;
+  }
+
+  .navbar.scrolled .nav-toggle span {
+    background: white;
+  }
+
+  .navbar.scrolled a,
+  .navbar.scrolled .nav-link {
+    color: #063373 !important;
+  }
+
 }
