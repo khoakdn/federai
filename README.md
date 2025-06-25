@@ -1,7 +1,5 @@
 # FederAI – Federated Learning Educational Website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR-BADGE-ID/deploy-status)](https://federai.netlify.app/)
-
 Welcome to **FederAI** – an educational website that explains **Federated Learning (FL)** in a clear and accessible way.  
 This platform is part of the **Art-IE** project and is funded by **Interreg** and the **European Union**.
 
